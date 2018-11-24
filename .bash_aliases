@@ -7,11 +7,12 @@ alias e='emacs -nw'
 alias la='ls -a'
 alias rmt='rm *~ && rm .*~'
 
-
 #git
 alias gits='git status -s'
 alias gpl='git pull'
 alias gp='git push'
+alias gsl='git shortlog -n'
+
 
 #Color and such
 alias gdb='gdb -q'
