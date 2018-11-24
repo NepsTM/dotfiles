@@ -6,8 +6,7 @@ export NNTPSERVER="news.epita.fr"
 
 export EDITOR="emacs -nw"
 
-
-( [ -d $HOME/afs/Pictures ] || [ -d $HOME/Pictures ] ) && feh --bg-scale "$( shuf -e -n 1 $HOME/Pictures/*.jpg )"
+[ -f ~/.scripts/wallpapers.sh ] && . ~/.scripts/wallpapers.sh
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
@@ -20,8 +19,8 @@ MAGENTA="\[\e[0;35m\]"
 CYAN="\[\e[0;36m\]"
 WHITE="\[\e[0;37m\]"
 
-if [ -f .git-prompt.sh ]; then
-    source .git-prompt.sh
+if [ -f ~/.scripts/.git-prompt.sh ]; then
+    source ~/.scripts/.git-prompt.sh
     export GIT_PS1_SHOWUNTRACKEDFILES=1
     export GIT_PS1_SHOWCOLORHINTS=1
     export GIT_PS1_SHOWDIRTYSTATE=1
