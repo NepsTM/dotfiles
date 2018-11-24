@@ -1,0 +1,19 @@
+[user]
+	name = Esteban Martin
+	email = esteban.martin@epita.fr
+[core]
+	excludesfile = ~/.gitignore
+	editor = emacs -nw
+
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	
+[push]
+	default = simple
+
+[commit]
+	verbose = true
+[pull]
+	rebase = true

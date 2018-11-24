@@ -1,0 +1,39 @@
+*utf8: always
+
+*scrollBar:	false
+*transparent: true
+*shading: 30
+
+*.font: xft:inconsolata:size=11
+*.letterSpace: -1
+
+*background: #383c4a
+*foreground: #d7d7d7
+*cursorColor: #c7c7c7
+*highlightTextColor: #383c4a
+*highlightColor: #c1ddff
+! black
+*.color0:       #383c4a
+*.color8:       #383c4a
+! red
+*.color1:       #e28d9d
+*.color9:       #e28d9d
+! green
+*.color2:       #bfd888
+*.color10:      #bfd888
+! yellow
+*.color3:       #df936c
+*.color11:      #df936c
+! blue
+*.color4:       #5294e2
+*.color12:      #5294e2
+! magenta
+*.color5:       #f74771
+*.color13:      #f74771
+! cyan
+*.color6:       #7c818c
+*.color14:      #7c818c
+! white
+*.color7:       #d7d7d7
+*.color15:      #d7d7d7
+
