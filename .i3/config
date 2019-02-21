@@ -135,8 +135,11 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+
 #start chromium
 
+assign [class="Chromium"] 2
+for_window [class="Chromium"] border pixel 0
 bindsym $mod+c exec chromium
 
 #changes wallpaper
@@ -182,3 +185,11 @@ set $blk #383c4a
 
 client.focused                  $blue_2  $blue_2  $blk
 client.unfocused                $blue_1   $blue_1   $wht
+
+
+
+# Cool but useless features, rarely used
+bindsym $mod+m move scratchpad
+bindsym $mod+o scratchpad
+
+set $wp2 "TEST"
