@@ -19,14 +19,21 @@ MAGENTA="\[\e[0;35m\]"
 CYAN="\[\e[0;36m\]"
 WHITE="\[\e[0;37m\]"
 
+function env_name()
+{
+    [[ -n $VIRTUAL_ENV ]] && echo '($(basename "$VIRTUAL_ENV" | cut -f1 -d -))'
+}
+
 if [ -f ~/.scripts/.git-prompt.sh ]; then
     source ~/.scripts/.git-prompt.sh
     export GIT_PS1_SHOWUNTRACKEDFILES=1
     export GIT_PS1_SHOWCOLORHINTS=1
     export GIT_PS1_SHOWDIRTYSTATE=1
     export GIT_PS1_SHOWUPSTREAM=verbose
-    export PROMPT_COMMAND='__git_ps1 "${GREEN}\$?${WHITE} [${RED}\u ${CYAN}@ \h ${WHITE}\W] -" "\$ "'
+    export PROMPT_COMMAND='__git_ps1 "$(env_name) ${GREEN}\$?${WHITE} [${RED}\u ${CYAN}@ \h ${WHITE}\W] -" "\$ "'
 
 else
     export PS1="${GREEN}\$?${WHITE} [${RED}\u ${CYAN}@ \h ${WHITE}\W]\$ "
 fi
+
+                             #'s/\(\(\/.*\/\)\|\(-.*\)\)//g'}}
