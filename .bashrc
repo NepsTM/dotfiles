@@ -36,4 +36,5 @@ else
     export PS1="${GREEN}\$?${WHITE} [${RED}\u ${CYAN}@ \h ${WHITE}\W]\$ "
 fi
 
-                             #'s/\(\(\/.*\/\)\|\(-.*\)\)//g'}}
+export PGDATA="$HOME/afs/postgres_data"
+export PGHOST="/tmp"

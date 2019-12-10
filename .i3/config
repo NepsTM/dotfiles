@@ -5,6 +5,9 @@
 # this file and re-run i3-config-wizard(1).
 #
 exec --no-startup-id feh --bg-scale /etc/i3/background.jpg
+exec --no-startup-id chromium
+exec --no-startup-id thunderbird
+
 # WARNING
 # WARNING: This configuration file is a template for the i3-config-wizard to
 # WARNING: generate a config which uses keysyms in your current layout. It does
@@ -21,11 +24,11 @@ set $mod Mod4
 # is used in the bar {} block below.
 
 #font: xft:inconsolata 11
-font pango:monospace 10
+font pango:monospace 8
 
 #Lock bind, executes the lock.sh script
 
-bindsym $mod+l exec --no-startup-id ~/.i3/lock.sh
+bindsym $mod+l exec --no-startup-id ~/afs/.confs/config/i3/lock.sh
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -142,6 +145,20 @@ assign [class="Chromium"] 2
 for_window [class="Chromium"] border pixel 0
 bindsym $mod+c exec chromium
 
+#start thunderbird
+
+assign [class="Thunderbird"] 10
+for_window [class="Thunderbird"] border pixel 0
+bindsym $mod+b exec thunderbird
+
+# Theme for Intellij
+
+for_window [title="IntelliJ"] border pixel 0
+bindsym $mod+i exec idea-ue-eap
+
+for_window [title="Pycharm"] border pixel 0
+bindsym $mod+y exec pycharm
+
 #changes wallpaper
 
 bindsym $mod+p exec --no-startup-id ~/.scripts/wallpapers.sh
@@ -184,12 +201,10 @@ set $wht #d7d7d7
 set $blk #383c4a
 
 client.focused                  $blue_2  $blue_2  $blk
-client.unfocused                $blue_1   $blue_1   $wht
+client.unfocused                $blue_1  $blue_1  $wht
 
 
 
 # Cool but useless features, rarely used
 bindsym $mod+m move scratchpad
-bindsym $mod+o scratchpad
-
-set $wp2 "TEST"
+bindsym $mod+o scratchpad show
