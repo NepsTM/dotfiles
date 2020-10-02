@@ -29,7 +29,7 @@ font pango:monospace 8
 
 #Lock bind, executes the lock.sh script
 
-bindsym $mod+l exec --no-startup-id ~/.config/i3/lock.sh
+bindsym $mod+l exec --no-startup-id ~/.scripts/lock.sh
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
