@@ -4,6 +4,7 @@
 
 #Convenient aliases
 alias e='emacs -nw'
+alias sl='ls'
 alias la='ls -a'
 alias rmt='rm *~ && rm .*~'
 
@@ -19,7 +20,4 @@ alias gqs='git quick-stats'
 alias gdb='gdb -q'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
-
-#Fast travel
-alias 42='cd ~/ING1/projets/42sh/'
-alias bt='cd ~/ING1/projets/BitTorrent/'
+alias ip='ip -c'

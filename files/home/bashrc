@@ -6,7 +6,7 @@ export NNTPSERVER="news.epita.fr"
 
 export EDITOR="emacs -nw"
 
-[ -f ~/.scripts/wallpapers.sh ] && . ~/.scripts/wallpapers.sh
+#[ -f ~/.scripts/wallpapers.sh ] && . ~/.scripts/wallpapers.sh
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
@@ -38,3 +38,4 @@ fi
 
 export PGDATA="$HOME/afs/postgres_data"
 export PGHOST="/tmp"
+export PATH="$PATH":/usr/sbin

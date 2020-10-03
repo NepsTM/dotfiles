@@ -1,7 +1,5 @@
 #! /bin/sh
 
-HOME=/tmp/
-
 for filename in files/home/*; do
     ln -sf "$PWD/$filename" "$HOME/.${filename##*/}"
 done
