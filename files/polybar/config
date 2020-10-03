@@ -34,10 +34,8 @@ separator = " | "
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = xft:tamzen-font:style=Regular:size=8
-font-1 = xft:FontAwesome5Free:style=Regular:pixelsize=10
-font-2 = xft:FontAwesome5Brands:style=Regular:pixelsize=10
-font-3 = xft:FontAwesome5FreeSolid:style=Regular:pixelsize=10
+font-0 = xft:tamzen-font:style=Regular:size=9
+font-1 = Siji:style=Regular;0
 
 modules-left =
 modules-center =
@@ -67,10 +65,8 @@ separator = " | "
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = xft:tamzen-font:style=Regular:size=8
-font-1 = FontAwesome5Free:style=Regular:pixelsize=10:antialias=false;3
-font-2 = FontAwesome5Brands:style=Regular:pixelsize=10:antialias=false;3
-font-3 = FontAwesome5FreeSolid:style=Regular:pixelsize=10:antialias=false;3
+font-0 = xft:tamzen-font:style=Regular:size=9
+font-1 = Siji:style=Regular;0
 
 modules-left =
 modules-center = i3
@@ -84,7 +80,7 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
@@ -214,14 +210,14 @@ ramp-coreload-7-foreground = ${colors.crimson}
 
 label = %percentage:2%% :
 
-ramp-coreload-0 = "0 ▁"
-ramp-coreload-1 = "1"
-ramp-coreload-2 = "2"
-ramp-coreload-3 = "3"
-ramp-coreload-4 = "4"
-ramp-coreload-5 = "5"
-ramp-coreload-6 = "6"
-ramp-coreload-7 = "7"
+ramp-coreload-0 = "▁"
+ramp-coreload-1 = "▂"
+ramp-coreload-2 = "▃"
+ramp-coreload-3 = "▄"
+ramp-coreload-4 = "▅"
+ramp-coreload-5 = "▆"
+ramp-coreload-6 = "▇"
+ramp-coreload-7 = "█"
 
 [module/memory]
 type = internal/memory
@@ -237,9 +233,9 @@ bar-used-foreground-3 = #ff5555
 bar-used-indicator = |
 bar-used-indicator-font = 6
 bar-used-indicator-foreground = #ff
-bar-used-fill = -
+bar-used-fill = ─
 bar-used-fill-font = 6
-bar-used-empty = -
+bar-used-empty = ─
 bar-used-empty-font = 6
 bar-used-empty-foreground = #444444
 
@@ -271,9 +267,9 @@ interface = eth0
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = "  "
+format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = "%local_ip%   %upspeed%  %downspeed%"
+label-connected = "%local_ip%   %upspeed%  %downspeed%"
 
 format-disconnected = <label-disconnected>
 ;format-disconnected = <label-disconnected>

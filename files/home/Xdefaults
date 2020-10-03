@@ -1,11 +1,13 @@
-!*utf8: always
+*utf8: always
 
 *scrollBar:	false
 *transparent: true
 *shading: 30
 
 !*.font: xft:Font\ Awesome\ 5\ Free\ Solid:size=10
-*.font: xft:Hack:style=Regular:size=10,xft:Symbola,-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1,xft:FontAwesome5FreeSolid:style=Regular:size=10
+*.font: xft:Hack:style=Regular:size=10, \
+-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
+!*.font: bdf:Siji:size=10
 
 *.letterSpace: -1
 
